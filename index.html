@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffd34f">
+  <meta name="description" content="Midi Minuit, cantine de saison à Nantes : une cuisine franche, une carte courte et une réservation en quelques instants.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Midi Minuit — Cantine de saison à Nantes">
+  <meta property="og:description" content="La saison se met à table. Découvrez la carte et réservez votre table chez Midi Minuit.">
+  <meta property="og:image" content="assets/assiette-pasta.webp">
+  <title>Midi Minuit — Cantine de saison à Nantes</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="innovation.css">
+  <script src="config.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="index.html" aria-label="Midi Minuit, accueil">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span class="brand-name"><strong data-brand>Midi Minuit</strong><small data-descriptor>Cantine de saison</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Navigation principale">
+        <a href="carte.html">La carte</a>
+        <a href="maison.html">La maison</a>
+        <a class="nav-cta" href="reservation.html">Réserver <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> CANTINE DE SAISON <span class="eyebrow-separator">/</span> <span data-city>Nantes</span></p>
+          <div class="moment-switch" role="group" aria-label="Choisir l’ambiance du restaurant">
+            <button type="button" class="moment-option is-active" data-service-mode="midi" aria-pressed="true"><span aria-hidden="true">☼</span> Le midi</button>
+            <button type="button" class="moment-option" data-service-mode="soir" aria-pressed="false"><span aria-hidden="true">◒</span> Le soir</button>
+          </div>
+          <h1 id="hero-title"><span data-mode-title>Un bon midi</span><br><em data-mode-emphasis>change tout.</em></h1>
+          <p class="hero-lead" data-mode-copy>Une assiette de saison, une vraie pause pour souffler au milieu de la journée.</p>
+          <div class="hero-actions">
+            <a class="button button-coral" href="reservation.html?service=Déjeuner" data-mode-booking><span data-mode-cta>Réserver ce midi</span><span aria-hidden="true">↗</span></a>
+            <a class="text-link text-link-light" href="carte.html">Voir la carte <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-footnote"><span class="open-dot" aria-hidden="true"></span><span data-mode-footnote>La bonne pause, de 12h à 14h</span></div>
+        </div>
+        <figure class="hero-visual">
+          <img src="assets/assiette-pasta.webp" alt="Assiette colorée de pâtes et légumes pour le déjeuner" fetchpriority="high" data-mode-image>
+          <div class="hero-photo-wash" aria-hidden="true"></div>
+          <figcaption class="hero-photo-label"><span data-mode-label>PAUSE DU MARCHÉ</span><span>FAIT POUR VOUS</span></figcaption>
+          <div class="hero-photo-stamp"><span>À TABLE</span><b>✳</b><span>ENSEMBLE</span></div>
+          <p class="hero-photo-note" data-mode-note>Le midi, on<br>recharge les idées.</p>
+        </figure>
+        <a class="hero-scroll" href="#esprit" aria-label="Défiler vers la présentation"><span>Découvrir</span><b aria-hidden="true">↓</b></a>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="La cuisine du restaurant"><div class="ticker-track"><span>DES SAISONS DANS L’ASSIETTE</span><b>✳</b><span>DES MOMENTS À PARTAGER</span><b>✳</b><span>DES SAISONS DANS L’ASSIETTE</span><b>✳</b><span>DES MOMENTS À PARTAGER</span></div></div>
+
+    <section class="quick-info" aria-label="Informations pratiques">
+      <div class="container quick-info-grid">
+        <div class="quick-info-item"><span class="info-icon" aria-hidden="true">01</span><div><strong>Une carte vivante</strong><small>Inspirée par les saisons</small></div></div>
+        <div class="quick-info-item"><span class="info-icon" aria-hidden="true">02</span><div><strong>Le midi & le soir</strong><small>12h–14h · 19h–22h</small></div></div>
+        <div class="quick-info-item"><span class="info-icon" aria-hidden="true">03</span><div><strong>Nous trouver</strong><small><span data-address>5 place des Tanneurs</span></small></div></div>
+        <a class="quick-info-link" href="reservation.html">Votre table vous attend <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="section section-intro" id="esprit" aria-labelledby="intro-title">
+      <div class="container">
+        <div class="section-kicker"><span>01 / L’ESPRIT MIDI MINUIT</span><span>Une cantine de quartier</span></div>
+        <div class="intro-grid">
+          <h2 id="intro-title">Du bon, du simple,<br><em>du vivant.</em></h2>
+          <div class="intro-copy">
+            <p class="lead-serif">On vient pour bien manger. On reste pour le plaisir d’être ensemble.</p>
+            <p>Chez Midi Minuit, la cuisine suit le rythme des saisons. Une carte courte, des assiettes généreuses et une équipe heureuse de vous accueillir — pour un déjeuner qui s’étire ou un dîner qui commence bien.</p>
+            <a class="text-link text-link-dark" href="maison.html">Pousser la porte <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="intro-photo-row">
+          <figure class="intro-photo"><img src="assets/interieur-bois.webp" alt="Salle de restaurant chaleureuse avec mobilier en bois et lumières suspendues" loading="lazy"><figcaption>Une place pour chaque moment.</figcaption></figure>
+          <div class="intro-note"><span class="note-symbol" aria-hidden="true">✳</span><p class="eyebrow">LA BONNE SAISON</p><h3>Ce que le marché<br>a de meilleur.</h3><p>Nous faisons évoluer les plats avec les récoltes et les envies. Une façon de cuisiner plus fraîche, plus libre et toujours généreuse.</p><a class="text-link text-link-dark" href="carte.html">Voir la carte du moment <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section menu-preview" aria-labelledby="preview-title">
+      <div class="container">
+        <div class="section-kicker"><span>02 / À LA CARTE</span><span>Une invitation à choisir</span></div>
+        <div class="section-heading-row"><h2 id="preview-title">Les envies<br><em>du moment.</em></h2><div class="heading-side-copy"><p>Des produits de saison, des recettes qui vont droit au goût et juste ce qu’il faut de surprise.</p><a class="text-link text-link-dark" href="carte.html">Toute la carte <span aria-hidden="true">↗</span></a></div></div>
+        <div class="dish-preview-grid">
+          <article class="dish-card dish-card-featured">
+            <a href="carte.html#panel-midi" class="dish-image"><img src="assets/assiette-pasta.webp" alt="Pâtes et légumes colorés servis dans une assiette" loading="lazy"><span class="dish-image-tag">LE MIDI</span><span class="dish-image-arrow" aria-hidden="true">↗</span></a>
+            <div class="dish-card-meta"><span>01 / LA PAUSE</span><span>À partir de 19 €</span></div><h3>Le déjeuner du marché</h3><p>Une formule courte et inspirée, renouvelée au gré des arrivages.</p>
+          </article>
+          <article class="dish-card">
+            <a href="carte.html#panel-soir" class="dish-image"><img src="assets/assiette-poisson.webp" alt="Poisson grillé accompagné de légumes" loading="lazy"><span class="dish-image-tag">LE SOIR</span><span class="dish-image-arrow" aria-hidden="true">↗</span></a>
+            <div class="dish-card-meta"><span>02 / LA TABLE</span><span>À partir de 24 €</span></div><h3>Les assiettes à partager</h3><p>Quelques plats de saison à savourer ensemble, à votre rythme.</p>
+          </article>
+          <article class="dish-card dish-card-quote"><span class="quote-mark" aria-hidden="true">“</span><p>Une carte courte pour laisser toute la place au produit.</p><span class="quote-caption">LA CUISINE MIDI MINUIT</span><a class="text-link text-link-dark" href="maison.html">Notre façon de faire <span aria-hidden="true">↗</span></a></article>
+        </div>
+        <div class="section-bottom-link"><span>La carte change au fil des saisons.</span><a class="button button-outline" href="carte.html">Lire la carte complète <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section home-house" aria-labelledby="house-title">
+      <div class="container house-grid">
+        <div class="house-image-wrap"><img src="assets/ambiance-table.webp" alt="Tables prêtes à accueillir les convives dans un bistrot lumineux" loading="lazy"><span class="house-image-caption">PRENEZ PLACE</span></div>
+        <div class="house-copy">
+          <div class="section-kicker"><span>03 / LE LIEU</span><span>À deux pas de <span data-district>Bouffay</span></span></div>
+          <p class="eyebrow">UNE TABLE, PLUSIEURS ENVIES</p><h2 id="house-title">Le déjeuner<br>qui respire.<br><em>Le dîner qui dure.</em></h2>
+          <p>Une salle vivante, des assiettes au centre de la table et une adresse facile à retrouver. Pour un tête-à-tête, un déjeuner entre collègues ou une grande tablée.</p>
+          <a class="text-link text-link-dark" href="maison.html">Découvrir la maison <span aria-hidden="true">↗</span></a>
+          <div class="house-stats"><div><strong>12h — 14h</strong><span>Service du midi</span></div><div><strong>19h — 22h</strong><span>Service du soir</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation-band" aria-labelledby="reserve-title"><div class="container reservation-band-inner"><div><p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> VOTRE PROCHAINE BONNE IDÉE</p><h2 id="reserve-title">On vous garde<br><em>une place ?</em></h2></div><div class="reservation-band-copy"><p>Choisissez votre moment, indiquez le nombre de convives et envoyez votre demande. Nous vous répondons pour confirmer la réservation.</p><a class="button button-cream" href="reservation.html">Demander une réservation <span aria-hidden="true">↗</span></a><small>Un peu pressé ? <a data-phone-link href="tel:+33200000000" data-phone>Appelez-nous</a></small></div><span class="band-spark" aria-hidden="true">✳</span></div></section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span></span><span class="brand-name"><strong data-brand>Midi Minuit</strong><small data-descriptor>Cantine de saison</small></span></a><p>Une cuisine au rythme des saisons,<br>à partager sans façon.</p></div>
+      <div class="footer-col"><p class="eyebrow">NOUS TROUVER</p><address><span data-address>5 place des Tanneurs</span><br><span data-city-line>44000 Nantes</span></address><a class="footer-link" data-map-link href="https://maps.google.com/?q=Nantes" target="_blank" rel="noreferrer">Itinéraire <span aria-hidden="true">↗</span></a></div>
+      <div class="footer-col"><p class="eyebrow">LES HORAIRES</p><p>Mardi — samedi<br>12h — 14h · 19h — 22h<br>Dimanche & lundi : repos</p><a class="footer-link" href="reservation.html">Réserver une table <span aria-hidden="true">↗</span></a></div>
+      <div class="footer-col"><p class="eyebrow">UN MOT, UN APPEL</p><a class="footer-contact" data-phone-link href="tel:+33200000000" data-phone>02 00 00 00 00</a><a class="footer-contact" data-email-link href="mailto:bonjour@midiminuit.example">bonjour@midiminuit.example</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span data-year></span> <span data-brand>Midi Minuit</span></span><span>Une table de quartier, au fil des saisons.</span><div><a href="mentions-legales.html">Mentions légales</a><span class="footer-dot">·</span><a href="mentions-legales.html#confidentialite">Confidentialité</a></div></div>
+  </footer>
+  <a class="mobile-booking" href="reservation.html">Réserver <span aria-hidden="true">↗</span></a>
+</body>
+</html>
